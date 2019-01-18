@@ -1,0 +1,132 @@
+{
+  "components": [
+    {
+      "tag": "agc-wheat-harvest-loss",
+      "dependencies": [],
+      "componentClass": "AgcWheatHarvestLoss",
+      "componentPath": "components/agc-wheat-harvest-loss/agc-wheat-harvest-loss.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "mode",
+          "type": "String",
+          "attr": "mode"
+        },
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        },
+        {
+          "name": "tract",
+          "type": "String",
+          "attr": "tract"
+        },
+        {
+          "name": "units",
+          "type": "Any",
+          "attr": "units"
+        }
+      ],
+      "states": [
+        {
+          "name": "cache"
+        },
+        {
+          "name": "currentStep"
+        },
+        {
+          "name": "results"
+        },
+        {
+          "name": "submitted"
+        }
+      ],
+      "events": [
+        {
+          "event": "agcCalculated"
+        },
+        {
+          "event": "agcStepChanged"
+        }
+      ]
+    },
+    {
+      "tag": "agc-wheat-harvest-loss-inputs",
+      "dependencies": [],
+      "componentClass": "AgcWheatHarvestLossResults",
+      "componentPath": "components/agc-wheat-harvest-loss-inputs/agc-wheat-harvest-loss-inputs.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-wheat-harvest-loss-progress",
+      "dependencies": [],
+      "componentClass": "AgcWheatHarvestLossProgress",
+      "componentPath": "components/agc-wheat-harvest-loss-progress/agc-wheat-harvest-loss-progress.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "currentStep"
+        }
+      ]
+    },
+    {
+      "tag": "agc-wheat-harvest-loss-results",
+      "dependencies": [],
+      "componentClass": "AgcWheatHarvestLossResults",
+      "componentPath": "components/agc-wheat-harvest-loss-results/agc-wheat-harvest-loss-results.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-wheat-harvest-loss-results-placeholder",
+      "dependencies": [],
+      "componentClass": "AgcWheatHarvestLossResultsPlaceholder",
+      "componentPath": "components/agc-wheat-harvest-loss-results-placeholder/agc-wheat-harvest-loss-results-placeholder.js",
+      "styles": {}
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.15.2",
+    "typescriptVersion": "2.9.2"
+  },
+  "bundles": []
+}
